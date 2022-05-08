@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="parant">
+ <h1>Calculate Your Rewards</h1>
+        <div class="userinput"><label for="firsetNum">Vendor/Bills</label>
+            <input type="text" name="firsetNum" id="" 
+            placeholder="Enter a number" value=""
+            class="input"
+            onchange="fixedValue()"
+            >
+        </div>
+  
+    <div class="userinput"><label for="secondNum">Media/Ad Spend</label>
+        <input type="text" name="secondNum" id="" placeholder="Enter a number" value=""
+        class="input"
+        onchange="fixedValue()"
+        >
+    </div>
+ 
+    <div class="userinput"> <label for="thirdNum">Corp.Spend</label>
+        <input type="text" name="thirdNum" id="" placeholder="Enter a number" value=""
+        class="input"
+        onchange="fixedValue()"
+        >
+    </div>
+    
+    <div class="userinput"><label for="fourthNum">Team Project</label>
+        <input type="text" name="fourthNum" id="" placeholder="Enter a number" 
+        class="input"
+        onchange="fixedValue()"
+        >
+    </div>
+    <p id="error"></p>
+    <h3>Compare Your Rewards</h3>
+   <div class="buttons">
+       <button onclick="calc('brex')">Brex</button>
+       <button onclick="calc('stripe')">Stripe</button>
+       <button onclick="calc('amex')">Amex </button>
+   </div>
+   <div class="card">
+<div class="changecalc">
+
+    <p id="calabrand"></p>
+</div>
+<div class="fixedcalc">
+   <div> <img src="./image/image1.jpg" alt=""></div>
+    <div>
+<p >Unlimited Rewards <span id="Unlimited"></span></p>
+<p >Lifetime Rewards <span id="Lifetime"></span></p>
+    </div>
+</div>
+   </div>
+</div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
